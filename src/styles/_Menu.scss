@@ -1,0 +1,71 @@
+.menu {
+    min-height: 100vh;
+    padding: 70px 120px;
+    background-color: $dark-bg;
+
+    .menu-wrapper {
+        // background-color: yellow;
+        min-height: 400px;
+
+        .wrap {
+            // background-color: indianred;
+            min-height: inherit;
+            gap: 30px;
+
+            .article {
+                min-height: inherit;
+                // gap: 40px;
+                // background-color: yellow;
+                width: 45%;
+                div {
+                    // background-color: red;
+                    .f-title {
+                        font-family: slite;
+                        letter-spacing: -3px;
+                        font-size: 3rem;
+                        margin-top: 30px;
+                    }
+                    .more {
+                        font-family: slite;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .menu-main {
+                // background-color: yellow;
+                min-height: 200px;
+                width: 55%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .menu {
+        .menu-wrapper {
+            .wrap {
+                .article {
+                    width: 100%;
+                    min-height: 100px;
+                    // background-color: yellow;
+                }
+                .menu-main {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        padding: 0 12px;
+        .menu-wrapper {
+            // background-color: red;
+            .wrap {
+                // background-color: yellow;
+            }
+        }
+    }
+}

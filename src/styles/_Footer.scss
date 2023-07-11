@@ -1,0 +1,19 @@
+footer {
+    min-height: 40vh;
+    background-color: $dark-bg;
+    .wrap {
+        .wrappee {
+            min-height: 40vh;
+            padding-top: 10vh;
+            .locate-us,
+            .time {
+                p {
+                    font-family: sreg;
+                }
+            }
+            .time {
+                background-color: $dark-bg;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import './color';
+@import './mixin';
+@import './Font';
+@import './Landing';
+@import './Enjoyable';
+@import './Locally';
+@import './Menu';
+@import './Dish';
+@import "./Familia";
+@import "./Reservation";
+@import './Footer';
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+#root {
+    min-height: 100vh;
+}
+.app {
+    min-height: 120vh;
+    overflow-x: hidden;
+    .bg {
+        width: 100%;
+        height: 120vh;
+        background-image: url(./../assets/images/homepage/hero-bg-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        z-index: -2;
+    }
+    .body {
+        min-height: 100vh;
+        background-color: $white-bg;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app {
+        // padding-bottom: 20px;
+        .bg {
+            background-image: url(./../assets/images/homepage/hero-bg-tablet.jpg);       
+            background-attachment: unset;
+            background-position-y: 20%;
+            min-height: 150vh;
+            // background-size: contain;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app {
+        .bg {
+            background-image: url(./../assets/images/homepage/hero-bg-mobile.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .body {
+            // background-color: yellow;
+        }
+    }
+    
+}

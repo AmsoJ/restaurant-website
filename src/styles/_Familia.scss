@@ -1,0 +1,191 @@
+.family {
+    min-height: 120vh;
+    isolation: isolate;
+    .f-icon {
+        left: -40%;
+        z-index: -1;
+    }
+    .f-wrap {
+        padding-top: 150px;
+        .pictogram {
+            height: 550px;
+            width: 50%;
+            // background-color: red;
+            &::after {
+                content: url(./../assets/images/patterns/pattern-lines.svg);
+                position: absolute;
+                top: -30px;
+                left: 0;
+            }
+            .img {
+                width: 90%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                // clip-path: circle(30% at -10% -5%);
+                top: 0;
+                left: 0;
+                &:first-child {
+                    background-image: url(./../assets/images/homepage/family-gathering-desktop.jpg);
+                }
+                &:nth-child(2) {
+                    background-image: url(./../assets/images/homepage/special-events-desktop.jpg);
+                }
+                &:last-child {
+                    background-image: url(./../assets/images/homepage/social-events-desktop.jpg);
+                }
+            }
+        }
+        .f-detail {
+            width: 50%;
+            .header {
+                min-height: 300px;
+                .head {
+                    min-height: 50px;
+                    .title {
+                        font-family: sreg;
+                        font-size: 40px;
+                        letter-spacing: -2px;
+                        background-color: white;
+                    }
+                }
+                .paragraphs {
+                    min-height: 100px;
+                    // background-color: yellow;
+                    p {
+                        font-family: slite;
+                        width: 90%;
+                        background-color: white;
+                    }
+                }
+            }
+            .indicate {
+                // background-color: yellow;
+                // height: 150px;
+                p{
+                    isolation: isolate;
+                    font-family: slite;
+                    &::after {
+                        content: url(./../assets/images/patterns/pattern-divide.svg);
+                        position: absolute;
+                        // width: 200px;
+                        top: 0;
+                        left: -18%;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .family {
+        .f-icon {
+            left: -70%;
+        }
+        .f-wrap {
+            .pictogram {
+                width: 100%;
+                height: 350px;
+                // background-color: yellow;
+                .img {
+                    width: 100%;
+                    &:first-child {
+                        background-image: url(./../assets/images/homepage/family-gathering-tablet.jpg);
+                    }
+                    &:nth-child(2) {
+                        background-image: url(./../assets/images/homepage/special-events-tablet.jpg);
+                    }
+                    &:last-child {
+                        background-image: url(./../assets/images/homepage/social-events-tablet.jpg);
+                    }
+                }
+            }
+            .f-detail {
+                width: 100%;
+                // background-color: yellow;
+                .header {
+                    min-height: 200px;
+                    width: 80%;
+                    gap: 10px;
+                }
+                .indicate {
+                    p::after {
+                        top: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .family {
+        // min-height: 60vh;
+        // background-color: black;
+        .f-icon {
+            display: none;
+        }
+        .f-wrap {
+            // padding-top: 150px;
+            // background-color: blue;
+            .pictogram {
+                min-height: 400px;
+                background-color: red;
+                width: 90%;
+                &::after {
+                    display: none;
+                }
+                .img {
+                    &:first-child {
+                        background-image: url(./../assets/images/homepage/family-gathering-mobile.jpg);
+                    }
+                    &:nth-child(2) {
+                        background-image: url(./../assets/images/homepage/special-events-mobile.jpg);
+                    }
+                    &:last-child {
+                        background-image: url(./../assets/images/homepage/social-events-mobile.jpg);
+                    }
+                }
+            }
+            .f-detail {
+                // width: 50%;
+                // background-color: yellow;
+                // height: 400px;
+                .header {
+                    // min-height: 300px;
+                    .head {
+                        // min-height: 50px;
+                        .title {
+                            // font-family: sreg;
+                            // font-size: 40px;
+                            // letter-spacing: -2px;
+                            // background-color: white;
+                        }
+                    }
+                    .paragraphs {
+                        min-height: 100px;
+                        // background-color: yellow;
+                        p {
+                            font-family: slite;
+                            width: 90%;
+                            background-color: white;
+                        }
+                    }
+                }
+                .indicate {
+                    // background-color: red;
+                    height: 200px;
+                    p{
+                        &::after {
+                            left: 50%;
+                            transform: translate(-50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.landing {
+    padding: 0px;
+    .intro {
+        min-height: 120vh;
+        background-color: $very-dark-bg;
+        padding: 0 0 0 100px;
+
+        .intro-box {
+            .title {
+                font-size: 4rem;
+                font-family: sreg;
+                color: $white-tx;
+                letter-spacing: -2px;
+            }
+            
+            .desc {
+                font-family: slite;
+                font-size: 20px;
+                letter-spacing: -1px;
+                // background-color: yellow;
+                width: 90%;
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .landing {
+        padding-bottom: 100px;
+        // background-color: rgba(255, 255, 0, 0.178);
+        .intro {
+            background-color: transparent;
+            padding: 0 60px;
+            .intro-box {
+                .title {
+                    font-size: 3rem;
+                }
+                .desc {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .landing {
+        // background-color: yellow;
+        .intro {
+            min-height: 70vh;
+            padding: 0 12px;
+            .intro-box {
+                // background-color: white;
+                .title {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

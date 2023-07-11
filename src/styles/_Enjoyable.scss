@@ -1,0 +1,83 @@
+.enjoyable-place {
+    min-height: 100vh;
+    // background-color: yellow;
+    isolation: isolate;
+    .icon {
+        bottom: 10%;
+        left: -10%;
+        transform: scale(.9);
+        z-index: -1;
+    }
+
+    .food-gallery {
+        // background-color: black;
+        min-height: inherit;
+        .f-left {
+            height: 105vh;
+            width: 40%;
+            background-image: url(./../assets/images/homepage/enjoyable-place-desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            transform: translateY(-5vh);
+            @include shade;
+        }
+        .f-right {
+            // background-color: yellow;
+            min-height: 300px;
+            width: 50%;
+            div {
+                .f-title {
+                    font-family: slite;
+                    letter-spacing: -3px;
+                    font-size: 3rem;
+                    margin-top: 80px;
+                }
+                .more {
+                    font-family: slite;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .enjoyable-place {
+        .icon {
+            left: -80%;
+        }
+        .food-gallery {
+            // background-color: yellow;
+            .f-left {
+                background-image: url(./../assets/images/homepage/enjoyable-place-tablet.jpg);
+                width: 100%;
+                height: 400px;
+            }
+            .f-right {
+                width: 100%;
+                min-height: 200px;
+                // background-color: rgba(255, 255, 0, 0.007);
+                div {
+                    .f-title {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .enjoyable-place {
+        // background-color: red;
+        min-height: 70vh;
+        .icon {
+            display: none;
+        }
+        .f-left {
+            background-image: url(./../assets/images/homepage/enjoyable-place-mobile.jpg);
+            // height: 400px;
+        }
+    }
+}

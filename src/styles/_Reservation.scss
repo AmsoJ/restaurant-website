@@ -1,0 +1,31 @@
+.reservation {
+    height: 40vh;
+    background-image: url(./../assets/images/homepage/ready-bg-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    .wrap {
+        height: inherit;
+        .title {
+            font-family: sreg;
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .reservation {
+        background-image: url(./../assets/images/homepage/ready-bg-tablet.jpg);
+    }
+}
+@media screen and (max-width: 500px) {
+    .reservation {
+        background-image: url(./../assets/images/homepage/ready-bg-mobile.jpg);
+        .wrap {
+            .title {
+                // font-size: 7vw;
+            }
+        }
+    }
+}
